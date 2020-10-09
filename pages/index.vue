@@ -11,7 +11,7 @@
               v-model="name"
               :rules="rules"
               hide-details="auto"
-              label="Name"
+              label="name"
               required
               filled
             />
@@ -30,7 +30,7 @@
         <v-row align="center" justify="center">
           <v-col cols="12" md="6">
             <v-text-field
-              v-model="email"
+              v-model="manu"
               :rules="rules"
               hide-details="auto"
               label="E-mail"
@@ -50,11 +50,10 @@
             />
           </v-col>
         </v-row>
-        </v-row>
         <v-row align="center" justify="center">
           <v-col cols="12" md="6">
             <v-text-field
-              v-model="email"
+              v-model="Password"
               :rules="rules"
               hide-details="auto"
               label="Password"
@@ -110,7 +109,6 @@
           </v-dialog>
         </v-row>
         <br>
-        </v-row>
       </v-card>
     </v-container>
   </v-form>
@@ -124,9 +122,8 @@ export default {
       math: '2',
       name: '',
       lastname: '',
-      email: '',
-      sumperson: '',
-      age: '',
+      Email: '',
+      Password: '',
       rules: [
         value => !!value || 'Required.'
       ],

@@ -7,18 +7,16 @@ export const state = () => ({
       sortable: false,
       value: 'name'
     },
-    { text: 'Barnd', value: 'name' },
-    { text: 'Type Wine', value: 'other' },
-    { text: 'Price', value: 'bath' },
-    { text: 'Alcohol', value: 'Percentage' },
-    { text: 'Contry', value: 'Where' },
-    { text: 'Palate', value: 'Testing' },
-    { text: 'Sold', value: 'Out' }
+    { text: 'name', value: 'name' },
+    { text: 'lastname', value: 'lastname' },
+    { text: 'E-mail', value: 'manu' },
+    { text: 'Password', value: 'Password' }
+
   ]
 })
 export const mutations = {
-  input (state, { name, other, bath, Percentage, Where, Testing, out }) {
-    state.data.push({ name, other, bath, Percentage, Where, Testing, out })
+  input (state, { name, lastname, manu, Password }) {
+    state.data.push({ name, lastname, manu, Password })
   }
 }
 export const getters = {
